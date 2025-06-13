@@ -775,4 +775,17 @@
             // Add hover sound effects (visual feedback)
             region.addEventListener('mouseenter', () => {
                 if (!region.classList.contains('active')) {
-                    region.style.transform = 'scale(1.
+                       region.style.transform = 'scale(1.05)';
+                }
+            });
+
+            region.addEventListener('mouseleave', () => {
+                if (!region.classList.contains('active')) {
+                    region.style.transform = 'scale(1)';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
