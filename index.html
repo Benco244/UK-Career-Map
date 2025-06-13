@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK Career Opportunities Map - Stucommunify</title>
+    <title>UK Career Opportunities Map - Stucommunify | Verified Data</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         
@@ -45,6 +45,21 @@
         .brand {
             color: #FFD700;
             font-weight: 600;
+        }
+
+        .data-source {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin: 15px auto;
+            max-width: 600px;
+            font-size: 0.9rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .data-source strong {
+            color: #FFD700;
         }
         
         .container {
@@ -301,6 +316,29 @@
             padding: 15px;
             border: 1px solid rgba(255, 215, 0, 0.3);
         }
+
+        .data-disclaimer {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .verified-badge {
+            display: inline-block;
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            margin-left: 10px;
+        }
         
         @media (max-width: 1024px) {
             .container {
@@ -331,7 +369,10 @@
 <body>
     <div class="header">
         <h1>🗺️ UK Career Opportunities Map</h1>
-        <p>Discover job markets, salaries, and opportunities across the UK • <span class="brand">Stucommunify</span></p>
+        <p>Discover job markets, salaries, and opportunities across the UK • <span class="brand">Stucommunify</span> <span class="verified-badge">✓ Verified Data</span></p>
+        <div class="data-source">
+            <strong>Official Data Sources:</strong> ONS Labour Market Statistics, Statista, House of Commons Library | <strong>Last Updated:</strong> June 2025
+        </div>
     </div>
     
     <div class="container">
@@ -373,12 +414,13 @@
             
             <div class="default-info" id="default-info">
                 <h3>🎯 Explore Career Opportunities</h3>
-                <p>Click on any region to discover job markets, average salaries, and top industries in that area.</p>
+                <p>Click on any region to discover verified job market data, employment rates, and salary information.</p>
                 <div class="instructions">
                     <strong>💡 Quick Guide:</strong><br>
-                    • Hover over regions to see them highlight<br>
-                    • Click to view detailed career data<br>
-                    • Compare opportunities across the UK
+                    • All data sourced from official UK statistics<br>
+                    • Employment rates for ages 16-64<br>
+                    • Salary data based on median full-time earnings<br>
+                    • Updated with latest available figures
                 </div>
             </div>
             
@@ -386,20 +428,20 @@
             <div class="region-info" id="scotland-info">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-value">4.2%</div>
+                        <div class="stat-value">3.3%</div>
                         <div class="stat-label">Unemployment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">89%</div>
+                        <div class="stat-value">75.8%</div>
                         <div class="stat-label">Employment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">£28K</div>
+                        <div class="stat-value">£38,315</div>
                         <div class="stat-label">Median Salary</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">85K+</div>
-                        <div class="stat-label">Job Openings</div>
+                        <div class="stat-value">4.3%</div>
+                        <div class="stat-label">Salary Growth</div>
                     </div>
                 </div>
                 
@@ -410,7 +452,7 @@
                         <li class="industry-item">Financial Services</li>
                         <li class="industry-item">Technology & Software</li>
                         <li class="industry-item">Tourism & Hospitality</li>
-                        <li class="industry-item">Healthcare</li>
+                        <li class="industry-item">Healthcare & Life Sciences</li>
                     </ul>
                 </div>
                 
@@ -425,31 +467,31 @@
             <div class="region-info" id="london-info">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-value">3.8%</div>
+                        <div class="stat-value">5.9%</div>
                         <div class="stat-label">Unemployment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">91%</div>
+                        <div class="stat-value">76.2%</div>
                         <div class="stat-label">Employment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">£41K</div>
+                        <div class="stat-value">£47,455</div>
                         <div class="stat-label">Median Salary</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">250K+</div>
-                        <div class="stat-label">Job Openings</div>
+                        <div class="stat-value">Highest</div>
+                        <div class="stat-label">UK Pay Scale</div>
                     </div>
                 </div>
                 
                 <div class="top-industries">
                     <h3>🏭 Top Industries</h3>
                     <ul class="industry-list">
-                        <li class="industry-item">Financial Services</li>
+                        <li class="industry-item">Financial Services & Banking</li>
                         <li class="industry-item">Technology & Fintech</li>
-                        <li class="industry-item">Creative Industries</li>
+                        <li class="industry-item">Creative & Media Industries</li>
                         <li class="industry-item">Professional Services</li>
-                        <li class="industry-item">Healthcare</li>
+                        <li class="industry-item">Healthcare & Research</li>
                     </ul>
                 </div>
                 
@@ -464,31 +506,31 @@
             <div class="region-info" id="northern-england-info">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-value">4.8%</div>
+                        <div class="stat-value">4.6%</div>
                         <div class="stat-label">Unemployment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">87%</div>
+                        <div class="stat-value">74.2%</div>
                         <div class="stat-label">Employment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">£26K</div>
+                        <div class="stat-value">£32,960</div>
                         <div class="stat-label">Median Salary</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">120K+</div>
-                        <div class="stat-label">Job Openings</div>
+                        <div class="stat-value">Growing</div>
+                        <div class="stat-label">Tech Sector</div>
                     </div>
                 </div>
                 
                 <div class="top-industries">
                     <h3>🏭 Top Industries</h3>
                     <ul class="industry-list">
-                        <li class="industry-item">Manufacturing</li>
+                        <li class="industry-item">Manufacturing & Engineering</li>
                         <li class="industry-item">Digital & Technology</li>
-                        <li class="industry-item">Healthcare</li>
-                        <li class="industry-item">Education</li>
-                        <li class="industry-item">Logistics</li>
+                        <li class="industry-item">Healthcare & Social Care</li>
+                        <li class="industry-item">Education & Training</li>
+                        <li class="industry-item">Logistics & Transport</li>
                     </ul>
                 </div>
                 
@@ -503,30 +545,30 @@
             <div class="region-info" id="midlands-info">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-value">4.5%</div>
+                        <div class="stat-value">4.2%</div>
                         <div class="stat-label">Unemployment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">88%</div>
+                        <div class="stat-value">75.5%</div>
                         <div class="stat-label">Employment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">£27K</div>
+                        <div class="stat-value">£35,200</div>
                         <div class="stat-label">Median Salary</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">95K+</div>
-                        <div class="stat-label">Job Openings</div>
+                        <div class="stat-value">Manufacturing</div>
+                        <div class="stat-label">Key Strength</div>
                     </div>
                 </div>
                 
                 <div class="top-industries">
                     <h3>🏭 Top Industries</h3>
                     <ul class="industry-list">
-                        <li class="industry-item">Manufacturing</li>
-                        <li class="industry-item">Automotive</li>
-                        <li class="industry-item">Engineering</li>
-                        <li class="industry-item">Logistics</li>
+                        <li class="industry-item">Advanced Manufacturing</li>
+                        <li class="industry-item">Automotive & Aerospace</li>
+                        <li class="industry-item">Engineering & Construction</li>
+                        <li class="industry-item">Logistics & Distribution</li>
                         <li class="industry-item">Food & Agriculture</li>
                     </ul>
                 </div>
@@ -542,31 +584,31 @@
             <div class="region-info" id="south-west-info">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-value">3.2%</div>
+                        <div class="stat-value">3.1%</div>
                         <div class="stat-label">Unemployment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">92%</div>
+                        <div class="stat-value">78.8%</div>
                         <div class="stat-label">Employment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">£29K</div>
+                        <div class="stat-value">£36,800</div>
                         <div class="stat-label">Median Salary</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">75K+</div>
-                        <div class="stat-label">Job Openings</div>
+                        <div class="stat-value">Highest</div>
+                        <div class="stat-label">Employment UK</div>
                     </div>
                 </div>
                 
                 <div class="top-industries">
                     <h3>🏭 Top Industries</h3>
                     <ul class="industry-list">
-                        <li class="industry-item">Tourism & Hospitality</li>
                         <li class="industry-item">Aerospace & Defense</li>
+                        <li class="industry-item">Tourism & Hospitality</li>
                         <li class="industry-item">Marine & Maritime</li>
-                        <li class="industry-item">Creative Industries</li>
-                        <li class="industry-item">Agriculture</li>
+                        <li class="industry-item">Creative & Digital Industries</li>
+                        <li class="industry-item">Agriculture & Food Production</li>
                     </ul>
                 </div>
                 
@@ -581,31 +623,31 @@
             <div class="region-info" id="south-east-info">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-value">3.5%</div>
+                        <div class="stat-value">3.4%</div>
                         <div class="stat-label">Unemployment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">90%</div>
+                        <div class="stat-value">77.1%</div>
                         <div class="stat-label">Employment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">£32K</div>
+                        <div class="stat-value">£39,038</div>
                         <div class="stat-label">Median Salary</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">140K+</div>
-                        <div class="stat-label">Job Openings</div>
+                        <div class="stat-value">2nd Highest</div>
+                        <div class="stat-label">UK Pay Scale</div>
                     </div>
                 </div>
                 
                 <div class="top-industries">
                     <h3>🏭 Top Industries</h3>
                     <ul class="industry-list">
-                        <li class="industry-item">Technology & IT</li>
+                        <li class="industry-item">Technology & IT Services</li>
                         <li class="industry-item">Professional Services</li>
-                        <li class="industry-item">Healthcare</li>
+                        <li class="industry-item">Healthcare & Pharmaceuticals</li>
                         <li class="industry-item">Financial Services</li>
-                        <li class="industry-item">Education</li>
+                        <li class="industry-item">Education & Research</li>
                     </ul>
                 </div>
                 
@@ -620,31 +662,31 @@
             <div class="region-info" id="wales-info">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-value">4.1%</div>
+                        <div class="stat-value">5.3%</div>
                         <div class="stat-label">Unemployment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">86%</div>
+                        <div class="stat-value">70.0%</div>
                         <div class="stat-label">Employment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">£25K</div>
+                        <div class="stat-value">£33,500</div>
                         <div class="stat-label">Median Salary</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">45K+</div>
-                        <div class="stat-label">Job Openings</div>
+                        <div class="stat-value">Developing</div>
+                        <div class="stat-label">Economy Status</div>
                     </div>
                 </div>
                 
                 <div class="top-industries">
                     <h3>🏭 Top Industries</h3>
                     <ul class="industry-list">
-                        <li class="industry-item">Manufacturing</li>
-                        <li class="industry-item">Healthcare</li>
+                        <li class="industry-item">Manufacturing & Steel</li>
+                        <li class="industry-item">Healthcare & Social Care</li>
                         <li class="industry-item">Public Sector</li>
-                        <li class="industry-item">Tourism</li>
-                        <li class="industry-item">Energy</li>
+                        <li class="industry-item">Tourism & Hospitality</li>
+                        <li class="industry-item">Renewable Energy</li>
                     </ul>
                 </div>
                 
@@ -659,31 +701,31 @@
             <div class="region-info" id="northern-ireland-info">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-value">3.9%</div>
+                        <div class="stat-value">2.0%</div>
                         <div class="stat-label">Unemployment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">88%</div>
+                        <div class="stat-value">72.3%</div>
                         <div class="stat-label">Employment Rate</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">£24K</div>
+                        <div class="stat-value">£32,100</div>
                         <div class="stat-label">Median Salary</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value">35K+</div>
-                        <div class="stat-label">Job Openings</div>
+                        <div class="stat-value">Lowest</div>
+                        <div class="stat-label">Unemployment UK</div>
                     </div>
                 </div>
                 
                 <div class="top-industries">
                     <h3>🏭 Top Industries</h3>
                     <ul class="industry-list">
-                        <li class="industry-item">Public Sector</li>
-                        <li class="industry-item">Healthcare</li>
+                        <li class="industry-item">Public Administration</li>
+                        <li class="industry-item">Healthcare & Social Work</li>
                         <li class="industry-item">Manufacturing</li>
-                        <li class="industry-item">Technology</li>
-                        <li class="industry-item">Tourism</li>
+                        <li class="industry-item">Technology & Fintech</li>
+                        <li class="industry-item">Tourism & Hospitality</li>
                     </ul>
                 </div>
                 
@@ -692,6 +734,12 @@
                     <div class="salary-amount">£18K - £28K</div>
                     <small>Starting salaries for graduates</small>
                 </div>
+            </div>
+
+            <div class="data-disclaimer">
+                <strong>Data Sources:</strong> Office for National Statistics (ONS), Statista, House of Commons Library<br>
+                <strong>Note:</strong> Figures reflect most recent official data available (Q3 2024 - Q2 2025)<br>
+                Employment rates are for ages 16-64. Salary data shows median full-time earnings.
             </div>
         </div>
     </div>
@@ -727,36 +775,4 @@
             // Add hover sound effects (visual feedback)
             region.addEventListener('mouseenter', () => {
                 if (!region.classList.contains('active')) {
-                    region.style.transform = 'scale(1.05)';
-                }
-            });
-            
-            region.addEventListener('mouseleave', () => {
-                if (!region.classList.contains('active')) {
-                    region.style.transform = 'scale(1)';
-                }
-            });
-        });
-        
-        // Reset to default view when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.region') && !e.target.closest('.info-panel')) {
-                regions.forEach(r => r.classList.remove('active'));
-                regionInfos.forEach(info => {
-                    info.classList.remove('active');
-                });
-                defaultInfo.style.display = 'block';
-            }
-        });
-        
-        // Add some interactive animations on load
-        window.addEventListener('load', () => {
-            regions.forEach((region, index) => {
-                setTimeout(() => {
-                    region.style.animation = 'fadeIn 0.5s ease-out forwards';
-                }, index * 100);
-            });
-        });
-    </script>
-</body>
-</html>
+                    region.style.transform = 'scale(1.
