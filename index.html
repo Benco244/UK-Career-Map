@@ -766,27 +766,53 @@
     
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const verifiedBadge = '<span style="background:rgba(34, 197, 94, 0.15); padding:2px 6px; border-radius:6px; font-size:0.75rem; color:#22c55e; margin-left:6px;" title="Verified against ONS Labour Market Data">✓ ONS Verified</span>';
+    const verifiedBadge = '<span style="background:rgba(34, 197, 94, 0.15); padding:2px 6px; border-radius:6px; font-size:0.75rem; color:#22c55e; margin-left:6px;" title="Verified against ONS Labour Market Data">✓ ONS Verified</span>';
 
-        const labels = document.querySelectorAll('.stat-label');
-        console.log('Script loaded. Found stat labels:', labels.length);
+    const labels = document.querySelectorAll('.stat-label');
+    console.log('Script loaded. Found stat labels:', labels.length);
 
-        labels.forEach(label => {
-          const text = label.textContent.trim();
-          if (text.includes('Unemployment') || text.includes('Median Salary')) {
-            label.insertAdjacentHTML('beforeend', verifiedBadge);
-          }
-        });
+    labels.forEach(label => {
+      const text = label.textContent.trim();
+      if (text.includes('Unemployment') || text.includes('Median Salary')) {
+        label.insertAdjacentHTML('beforeend', verifiedBadge);
+      }
+    });
 
-        const now = new Date();
-        const options = { year: 'numeric', month: 'long' };
-        const verifiedText = now.toLocaleDateString('en-GB', options);
-        const verifiedDateEl = document.getElementById('verified-date');
-        if (verifiedDateEl) {
-          verifiedDateEl.textContent = verifiedText;
+    const now = new Date();
+    const options = { year: 'numeric', month: 'long' };
+    const verifiedText = now.toLocaleDateString('en-GB', options);
+    const verifiedDateEl = document.getElementById('verified-date');
+    if (verifiedDateEl) {
+      verifiedDateEl.textContent = verifiedText;
+    }
+
+    // Region interactivity logic
+    const regions = document.querySelectorAll('.region');
+    const infoPanels = document.querySelectorAll('.region-info');
+    const defaultInfo = document.getElementById('default-info');
+
+    regions.forEach(region => {
+      region.addEventListener('click', () => {
+        // Remove active class from all regions
+        regions.forEach(r => r.classList.remove('active'));
+        // Add active class to clicked region
+        region.classList.add('active');
+
+        // Hide all info panels
+        infoPanels.forEach(panel => panel.classList.remove('active'));
+        // Hide default info
+        defaultInfo.style.display = 'none';
+
+        // Show the selected region’s info
+        const selectedRegion = region.getAttribute('data-region');
+        const selectedPanel = document.getElementById(`${selectedRegion}-info`);
+        if (selectedPanel) {
+          selectedPanel.classList.add('active');
         }
       });
-    </script>
+    });
+  });
+</script>
     
 </body>
 </html>
